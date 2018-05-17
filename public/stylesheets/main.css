@@ -1,0 +1,36 @@
+.buttonBox{
+	background-color: grey;
+	height: 5%;
+	position: absolute;
+	left: 0;right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.dashArrow{
+	height: 50px;
+}
+.profileName{
+	color: blue;
+	text-align: center;
+}
+.sideBar{
+	background-color: #d6d2d2;
+  position: fixed;
+  top:0; left:0; bottom:0;
+  z-index: -1;
+  padding: 0px;
+}
+.profilePic{
+	width: 50%;
+}
+.content_left_2{
+	left: 16.666666667%;
+}
+.content_left_1{
+	left: 8.3333333333%;
+}
+#nav
+{
+	background-color: #d6d2d2;
+	border-color: #d6d2d2;
+}

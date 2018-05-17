@@ -1,0 +1,25 @@
+
+<nav id="nav" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <b> <a class="navbar-brand" href="/" style="color:black;">GroupChat</a> </b>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+
+
+      	<% if(currentUser.length > 0){ %>
+
+      		<li ><a href="/signup"><span class="glyphicon glyphicon-user" style="color:black;" ></span> <span style="color:black;">Sign Up</span></a></li>
+			<li><a href="/login"><span class="glyphicon glyphicon-log-in" style="color:black;"></span> <span style="color:black;"> Login </span></a></li>
+
+      	<% } else { %>
+
+      		<li><a href="#"	style="color:black;"><%= currentUser %></a></li>
+           	<li><a href="/logout"	style="color:black;">Logout</a></li>
+
+        <% } %>
+
+       </ul>
+
+  </div>
+</nav>

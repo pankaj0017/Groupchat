@@ -1,0 +1,51 @@
+
+<br><br><br><br><br>
+
+
+
+
+<br><br><br><br><br>
+
+<% if(currentUser.length > 0){ %>
+
+	<div class="profilePicBox">
+		<center>
+			<img src='' class="profilePic"/>
+		</center>
+	</div>
+	<div class="profileName">
+		Admin
+	</div>
+	<br><br>
+	<div class="row" style="background-color:white;">
+			<div class="col-sm-6">
+				<center><a href="/signup"><span class="glyphicon glyphicon-user" style="color:black;" ></span> <span style="color:black;">Sign Up</span></a></center>
+			</div>
+			<div class="col-sm-6">
+				<center><a href="/login"><span class="glyphicon glyphicon-log-in" style="color:black;"></span> <span style="color:black;"> Login </span></a></center>
+			</div>
+	</div>
+
+<% } else { %>
+
+	<div class="profilePicBox">
+		<center>
+			<img src='https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/25594170_1530259867070816_1178456190544402361_n.jpg?oh=fd8b1287fd0d268f4fe457cb1d4377e6&oe=5AFD58B6' 	class="profilePic"/>
+		</center>
+	</div>
+	<br><br><br>
+	<div class="profileName">
+		<%= currentUser %>
+	</div>
+
+<% } %>
+
+
+
+
+<br><br><br><br><br><br><br><br<br><br><br><br><br><br><br><br>
+
+
+<div class="buttonBox">
+	<center><img src='/public/img/left.png' class="dashArrow" /></center>
+</div>
