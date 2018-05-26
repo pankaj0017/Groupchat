@@ -7,14 +7,14 @@
       <ul class="nav navbar-nav navbar-right">
 
 
-      	<% if(currentUser.length > 0){ %>
+      	<% if(!currentUser){ %>
 
       		<li ><a href="/signup"><span class="glyphicon glyphicon-user" style="color:black;" ></span> <span style="color:black;">Sign Up</span></a></li>
 			<li><a href="/login"><span class="glyphicon glyphicon-log-in" style="color:black;"></span> <span style="color:black;"> Login </span></a></li>
 
       	<% } else { %>
 
-      		<li><a href="#"	style="color:black;"><%= currentUser %></a></li>
+      		<li><a href="#"	style="color:black;"><%= currentUser.user_name %></a></li>
            	<li><a href="/logout"	style="color:black;">Logout</a></li>
 
         <% } %>

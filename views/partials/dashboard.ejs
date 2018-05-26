@@ -6,7 +6,7 @@
 
 <br><br><br><br><br>
 
-<% if(currentUser.length > 0){ %>
+<% if(!currentUser){ %>
 
 	<div class="profilePicBox">
 		<center>
@@ -35,7 +35,12 @@
 	</div>
 	<br><br><br>
 	<div class="profileName">
-		<%= currentUser %>
+		<%= currentUser.user_name %>
+	</div>
+
+	<br><br><br>
+	<div>
+		<center><a href="/update">change credentials</a></center>
 	</div>
 
 <% } %>
